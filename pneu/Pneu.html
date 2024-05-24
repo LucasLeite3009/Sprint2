@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Pneu</title>
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(Novo\ Projeto.jpg);
+    }
+    #porto{
+        display: flex;
+        justify-content: center;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+
+    h2 {
+        text-align: center;
+      color:#0094FF;
+      font-family: "Luckiest Guy", cursive;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 105, 243, 0.644);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      color:#0094FF ;
+      font-family: "Luckiest Guy", cursive;
+    }
+    
+    input[type="text"],
+    input[type="localização"] 
+    {
+      font-family: "Luckiest Guy", cursive;
+      width: 378px;
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      color: #fff;
+      margin-right:10px;
+      background-color: #00A3FF;
+      opacity: 0.4;
+    }
+
+    ::placeholder{
+        color: #fff;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button {
+      display: flex;
+      width: 400px;
+      margin-bottom: 20px;
+      font-size: medium;
+      color: #fff;
+      justify-content: center;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      
+      
+    }
+
+    a{
+        text-decoration:  none;
+        color: #fff;
+        font-family: "Luckiest Guy", cursive;
+        font-size: large;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+
+    @media (max-width: 1200px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+      }
+
+      input[type="text"],
+      input[type="localização"] {
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 10px;
+      }
+
+      input[type="text"],
+      input[type="localização"] {
+        padding: 6px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="porto">
+           <a href="../Serviços/Sev.html"><img src="porto.png" height="90" width="450" alt=""></a> 
+            
+        </div>
+    </header>
+     
+    <h2>Troca de pneu</h2>
+
+    <div class="container">
+    <form action="#">
+        <div class="form-group">
+          <label for="localização">Localização:</label>
+          <input type="text" id="localização" name="localização" placeholder="" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="pneu">Tipo do Pneu:</label>
+          <input type="text" id="pneu" name="email" placeholder="" required>
+        </div>
+    
+        
+    
+        <div class="botao">
+            <button><a href="">Enviar</a></button>
+          </div>
+    
+      </form>
+    </div>
+</body>
+</html>
